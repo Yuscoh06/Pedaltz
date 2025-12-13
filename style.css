@@ -14,6 +14,7 @@ body {
   color: #111;
   background: #fff;
   overflow: hidden;
+  overflow: visible;
 }
 
 .logo-img {
@@ -28,7 +29,8 @@ body {
   margin-top: 1rem;
   grid-template-columns: 1.5fr 2fr 0.5fr;
   align-items: center;
-  z-index: 999;
+  position: relative;
+  z-index: 9999;
 }
 .nav-links {
   display: flex;
@@ -36,7 +38,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-
+  color: #fff;
   font-size: 19px;
   font-weight: 500;
   align-items: center;
@@ -111,16 +113,18 @@ body {
 .label {
   display: flex;
   align-items: center;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 800;
 }
 
 .card .date {
-  color: red;}
+  color: red;
+}
 
 .date {
   text-align: right;
   font-size: 14px;
+  padding-right: 1rem;
 }
 
 .time {
@@ -175,16 +179,13 @@ body {
   rotate: 330deg;
   margin-top: -40rem;
   width: 53rem;
-  height: 64rem;
+  height: 66rem;
   overflow: hidden;
   margin-right: -13.9rem;
 }
 .img {
   width: 60rem;
-  margin-top: -1rem;
+  margin-top: 2rem;
   rotate: 45deg;
-  margin-right: 5.2rem;
+  margin-right: 5rem;
 }
-
-
-
