@@ -53,6 +53,15 @@ body {
   border-radius: 6px;
 }
 
+.menu-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  display: none;
+}
+
 .hero {
   margin: 20px 0;
   padding: 0;
@@ -63,7 +72,7 @@ body {
   position: relative;
 }
 
-.hero-big{
+.hero-big {
   overflow: hidden;
 }
 
@@ -227,9 +236,8 @@ h2 {
   width: 40px;
   height: 40px;
   font-size: 25px;
-
+  border: 2px solid #000;
   border-radius: 50%;
-  border: 1px solid #ddd;
   background: #fff;
 }
 
@@ -291,6 +299,22 @@ h2 {
   color: #b4b4b4;
   display: flex;
   flex-direction: column;
+}
+
+.card-meta p {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.dash {
+  color: red;
+}
+
+.price {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 .join {
@@ -584,5 +608,683 @@ h4 {
 
 .social {
   margin: 3.5rem 0;
-  margin-bottom: 3.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 52px;
+  }
+
+  .left {
+    padding-left: 2.5rem;
+    box-sizing: content-box;
+  }
+
+  .label {
+    font-size: 15px;
+  }
+
+  .date {
+    padding: 0;
+  }
+
+  .nav {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .nav-links {
+    font-size: 17px;
+    gap: 1.5rem;
+  }
+
+  .left {
+    padding-left: 2.5rem;
+    box-sizing: content-box;
+  }
+
+  .label {
+    font-size: 17px;
+  }
+
+  .img {
+    width: 52rem;
+    margin-top: 5rem;
+    margin-right: 13rem;
+  }
+
+  .donate {
+    padding: 0.8rem 12px;
+  }
+
+  .hero {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+
+  .right {
+    width: 50rem;
+  }
+  .card {
+    padding: 0;
+    grid-template-columns: 0.9fr 1.5fr;
+    margin-right: -5rem;
+    margin-top: 4.5rem;
+  }
+
+  .card-grid {
+    gap: 2.5rem;
+  }
+
+  .img-div {
+    margin-top: 5rem;
+  }
+
+  .card-body {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .lorem-1 {
+    font-size: 13px;
+  }
+
+  .card-meta p {
+    font-size: 14px;
+    line-height: 0.5px;
+  }
+
+  .card1-img {
+    margin: -3.9rem 0;
+    padding: 0;
+  }
+
+  .stats-section {
+    padding: 40px;
+  }
+
+  .card-grid-2 {
+    gap: 2rem;
+  }
+
+  .game {
+    margin: -0.1rem;
+  }
+
+  .changer-1 {
+    font-size: 16px;
+  }
+
+  .changer-p {
+    font-size: 16px;
+  }
+
+  .changer {
+    margin-bottom: 0;
+  }
+
+  .more {
+    padding: 0.3rem 0.7rem;
+    font-size: 16px;
+  }
+
+  .lorem-2 {
+    font-size: 10px;
+  }
+
+  .check-p {
+    font-size: 13.5px;
+  }
+
+  .check {
+    padding: 4rem 2rem;
+  }
+
+  .thumb {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  .thumb-2 {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: -25rem;
+  }
+
+  .stats-section-4 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-big {
+    background-image: url(image/hero.jpg);
+    background-size: cover;
+    background-position-y: 42rem;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .nav-links {
+    font-size: 15px;
+    gap: 1.5rem;
+    color: #000;
+    display: none;
+  }
+
+  .left {
+    box-sizing: content-box;
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem 0.1rem;
+  }
+
+  .join {
+    margin-top: 1rem;
+  }
+
+  .label {
+    font-size: 17px;
+  }
+
+  .donate {
+    display: none;
+  }
+
+  .hero {
+    gap: 1rem;
+    display: block;
+    background-color: #f0f0f0dd;
+    margin: 3rem 7rem;
+    border-radius: 10px;
+  }
+
+  .sub {
+    font-size: 16px;
+    margin: 0 6rem;
+    margin-top: -1rem;
+    color: #252525;
+  }
+
+  .right {
+    display: none;
+    rotate: 0deg;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .img {
+    rotate: calc(0deg);
+    margin-top: -20rem;
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+  }
+
+  .card {
+    padding: 0 8.3rem;
+    display: grid;
+    grid-template-columns: 0.9fr 1.5fr;
+    margin-right: -5rem;
+    margin-top: 4.5rem;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .day {
+    background-color: #acacac;
+  }
+
+  .card-grid {
+    gap: 1.7rem;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .img-div {
+    margin-top: 5rem;
+  }
+
+  .card-body {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .lorem-1 {
+    font-size: 11px;
+  }
+
+  .card-meta p {
+    font-size: 12px;
+    line-height: 0.5px;
+  }
+
+  .card1-img {
+    margin: -3.8rem 0;
+    padding: 0;
+  }
+
+  .card2-img {
+    height: 15rem;
+  }
+
+  .stats-section {
+    padding: 40px;
+  }
+
+  .ride {
+    font-size: 35px;
+  }
+
+  .ride-p {
+    font-size: 11px;
+  }
+
+  .join-2 {
+    padding: 0.8rem 2rem;
+  }
+
+  .plus,
+  .trail,
+  .trail-2,
+  .plus-1,
+  .plus-2,
+  .trail-1 {
+    padding: 1.3rem auto;
+  }
+
+  .memb p {
+    font-size: 31.5px;
+  }
+
+  .card-grid-2 {
+    gap: 1.3rem;
+  }
+
+  .game {
+    margin: -0.1rem;
+  }
+
+  .changer-1 {
+    font-size: 13px;
+  }
+
+  .changer-p {
+    font-size: 13px;
+  }
+
+  .changer {
+    margin-top: -8rem;
+  }
+
+  .more {
+    padding: 0.3rem 0.7rem;
+    font-size: 16px;
+  }
+
+  .lorem-2 {
+    font-size: 9px;
+  }
+
+  .check-p {
+    font-size: 11px;
+  }
+
+  .check {
+    padding: 4rem 2rem;
+  }
+
+  .thumb {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  .thumb-2 {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: -25rem;
+  }
+
+  .stats-section-4 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-big {
+    background-image: url(image/hero.jpg);
+    background-size: cover;
+    background-position-y: 0;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 3rem;
+  }
+
+  .nav-links {
+    font-size: 15px;
+    gap: 1.5rem;
+    color: #000;
+    display: none;
+  }
+
+  .left {
+    box-sizing: content-box;
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 1rem 0.1rem;
+    box-shadow: 20px 20px 30px -10px rgba(0, 0, 0, 0.2);
+  }
+
+  .join {
+    margin-top: 1rem;
+  }
+
+  .label {
+    font-size: 17px;
+  }
+
+  .donate {
+    display: none;
+  }
+
+  .hero {
+    gap: 1rem;
+    display: block;
+    background-color: #f0f0f0dd;
+    margin: 0 3rem;
+    border-radius: 10px;
+  }
+
+  .sub {
+    font-size: 12px;
+    margin: 0 0.5rem;
+    margin-top: -1rem;
+    color: #252525;
+  }
+
+  .right {
+    display: none;
+    rotate: 0deg;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .img {
+    rotate: calc(0deg);
+    margin-top: -20rem;
+    margin: 0;
+    padding: 0;
+    height: 30rem;
+  }
+
+  .card {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .mash {
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .date {
+    text-align: center;
+  }
+
+  .day {
+    background-color: #acacac;
+  }
+
+  .container {
+    margin-top: -3rem;
+  }
+
+  .card-grid {
+    gap: 1.7rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .img-div {
+    margin-top: 2rem;
+  }
+
+  .card-body {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .lorem-1 {
+    font-size: 13px;
+  }
+
+  .card-meta p {
+    font-size: 13px;
+    line-height: 0.5px;
+  }
+
+  .card1-img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .carrets {
+    text-align: left;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card2-img {
+    height: 15rem;
+  }
+
+  .stats-section {
+    padding: 28px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ride {
+    font-size: 33px;
+  }
+
+  .ride-p {
+    font-size: 12px;
+  }
+
+  .join-2 {
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .together {
+    margin: 2rem 0;
+  }
+
+  .plus-1,
+  .plus-2 {
+    padding: 0.5rem 2rem;
+  }
+
+  .plus {
+    padding: 0.5rem 1.7rem;
+  }
+
+  .trail-2 {
+    padding: 0.5rem 4rem;
+  }
+
+  .trail {
+    padding: 0.5rem 2.3rem;
+  }
+
+  .trail-1 {
+    padding: 0.5rem;
+  }
+
+  .memb p {
+    font-size: 25px;
+  }
+
+  .card-grid-2 {
+    gap: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .event-card-2{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .game {
+    margin: 0;
+    box-shadow: inset 0 -120px 80px -20px rgba(0, 0, 0, 0.945),
+      inset 0 40px 60px -40px rgba(0, 0, 0, 0.18);
+      width: 100%;
+      height: 100%;
+  }
+
+  .changer-1 {
+    font-size: 14.5px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 4rem;
+  }
+
+  .bike{
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .more {
+    align-items: center;
+    margin: 0 6.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card3-img {
+    display: none;
+  }
+
+  .card-three {
+    background-image: url(image/610aad5ee1e682aa8fe17f96be36d159c539c0bf.png);
+    background-size: cover;
+    background-position-y: -60px;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  .changer-p {
+    font-size: 14.5px;
+    text-align: center;
+  }
+
+  .changer {
+    margin-top: -8rem;
+  }
+
+  .more {
+    padding: 0.3rem 0.7rem;
+    font-size: 14px;
+  }
+
+  .lorem-2 {
+    color: white;
+    font-size: 13px;
+  }
+
+  .bike {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .check-p {
+    font-size: 13px;
+  }
+
+  .check {
+    padding: 4rem 2rem;
+    background-color: #0b0b0bd2;
+  }
+
+  .stats-section-3 {
+    padding: 20px 10px;
+  }
+
+  .outer {
+    display: block;
+    padding: 0;
+  }
+
+  h4 {
+    font-size: 35px;
+  }
+
+  .thumb {
+    height: 6rem;
+    width: 6rem;
+    margin: 0 auto;
+  }
+
+  .thumb-2 {
+    width: 6rem;
+    height: 6rem;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  .stats-section-4 p {
+    font-size: 14px;
+  }
+
+  .menu-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
 }

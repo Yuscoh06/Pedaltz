@@ -4,106 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedal UI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-
     <!-- ///////////////////////////////// -->
     <!-- ///////////////////////////////// -->
     <!-- ///////////////////////////////// -->
     <!-- ///////////////////////////////// -->
 
-
-    
     <nav class="hero-big">
-<nav class="nav">
-      <div class="logo">
-        <img
-          class="logo-img"
-          src="image/bee1c0b15aa8f5980ee98154824e44651c673c25.png"
-          alt=""
-        />
-      </div>
-      <ul class="nav-links">
-        <li>About</li>
-        <li>Our Team</li>
-        <li>
-          Programs&nbsp;<svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-            fill="#fff"
-            viewBox="0 0 256 256"
-          >
-            <path
-              d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-            ></path>
-          </svg>
-        </li>
-        <li>
-          Events &nbsp;<svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-            fill="#fff"
-            viewBox="0 0 256 256"
-          >
-            <path
-              d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
-            ></path>
-          </svg>
-        </li>
-        <li>Pricing</li>
-      </ul>
-      <button class="donate">Donate</button>
-    </nav>
-
-<nav class="hero">
-      <div class="left">
-        <h1 class="title">
-          Ride for a Cause,<br />Make Every Mile
-          <span class="matter">Matter</span>
-        </h1>
-        <p class="sub">
-          Join a community of cyclists dedicated to making a difference while
-          exploring the world on teo wheels.
-        </p>
-        <div class="hero-cta">
-          <button class="join">Join the Community</button>
+      <nav class="nav">
+        <div class="logo">
+          <img
+            class="logo-img"
+            src="image/bee1c0b15aa8f5980ee98154824e44651c673c25.png"
+            alt=""
+          />
         </div>
 
-        <div id="card" class="card">
-          <div class="mash">
-            <div class="label">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="#000000"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm36,96a40,40,0,1,0,40,40A40,40,0,0,0,200,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,200,200ZM56,136a40,40,0,1,0,40,40A40,40,0,0,0,56,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,56,200Zm136-80H152a8,8,0,0,1-5.66-2.34L120,91.31,99.31,112l34.35,34.34A8,8,0,0,1,136,152v48a8,8,0,0,1-16,0V155.31L82.34,117.66a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,0L155.31,104H192a8,8,0,0,1,0,16Z"
-                ></path></svg
-              >CYCLING MASHUP.
+        <ul class="nav-links">
+          <li>About</li>
+          <li>Our Team</li>
+          <li>
+            Programs&nbsp;<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="#fff"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            Events &nbsp;<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="#fff"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+              ></path>
+            </svg>
+          </li>
+          <li>Pricing</li>
+        </ul>
+        <button class="donate">Donate</button>
+
+        <div class="menu-btn" id="menuButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="42"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM192,184H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-48H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-48H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Z"
+            ></path>
+          </svg>
+        </div>
+      </nav>
+
+      <nav class="hero">
+        <div class="left">
+          <h1 class="title">
+            Ride for a Cause,<br />Make Every Mile
+            <span class="matter">Matter</span>
+          </h1>
+          <p class="sub">
+            Join a community of cyclists dedicated to making a difference while
+            exploring the world on teo wheels.
+          </p>
+          <div class="hero-cta">
+            <button class="join">Join the Community</button>
+          </div>
+
+          <div id="card" class="card">
+            <div class="mash">
+              <div class="label">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm36,96a40,40,0,1,0,40,40A40,40,0,0,0,200,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,200,200ZM56,136a40,40,0,1,0,40,40A40,40,0,0,0,56,136Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,56,200Zm136-80H152a8,8,0,0,1-5.66-2.34L120,91.31,99.31,112l34.35,34.34A8,8,0,0,1,136,152v48a8,8,0,0,1-16,0V155.31L82.34,117.66a8,8,0,0,1,0-11.32l32-32a8,8,0,0,1,11.32,0L155.31,104H192a8,8,0,0,1,0,16Z"
+                  ></path></svg
+                >CYCLING MASHUP.
+              </div>
+              <div class="date">AUG 12, 2024</div>
             </div>
-            <div class="date">AUG 12, 2024</div>
-          </div>
-          <div class="time">
-            <span class="day">00<br /><span class="in">day </span></span>
-            <span class="day">00<br /><span class="in">hrs </span></span
-            ><span class="day">00<br /><span class="in">min </span></span
-            ><span class="day">00<br /><span class="in">sec </span></span>
+            <div class="time">
+              <span class="day">00<br /><span class="in">day </span></span>
+              <span class="day">00<br /><span class="in">hrs </span></span
+              ><span class="day">00<br /><span class="in">min </span></span
+              ><span class="day">00<br /><span class="in">sec </span></span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="right">
-        <div class="img">
-          <img src="image/hero.jpg" alt="" />
+        <div class="right">
+          <div class="img">
+            <img src="image/hero.jpg" alt="" />
+          </div>
         </div>
-      </div>
       </nav>
     </nav>
 
@@ -142,8 +155,32 @@
               <span class="price">FREE</span>
             </div>
             <div class="card-meta">
-              <div>📍Arusha-Namanga Border Post</div>
-              <div>🗓️June 26, 2025 — 07:30 AM</div>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#e01b24"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M228,200a28,28,0,0,1-54.83,8H72a48,48,0,0,1,0-96h96a24,24,0,0,0,0-48H72a8,8,0,0,1,0-16h96a40,40,0,0,1,0,80H72a32,32,0,0,0,0,64H173.17A28,28,0,0,1,228,200Z"
+                  ></path></svg
+                >&nbsp; Arusha - Namanga Border Post
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#e01b24"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM84,184a12,12,0,1,1,12-12A12,12,0,0,1,84,184Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,128,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,128,144Zm44,40a12,12,0,1,1,12-12A12,12,0,0,1,172,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,172,144Zm36-64H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24Z"
+                  ></path></svg
+                >&nbsp; June 26, 2025 <strong class="dash">&nbsp;-&nbsp;</strong>07:30 AM
+              </p>
             </div>
             <button class="join">Join</button>
           </div>
@@ -161,9 +198,32 @@
               <span class="price">FREE</span>
             </div>
             <div class="card-meta">
-              <div>📍Arusha-Namanga Border Post</div>
-              <div>🗓️June 26, 2025 — 07:30 AM</div>
-            </div>
+             <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#e01b24"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M228,200a28,28,0,0,1-54.83,8H72a48,48,0,0,1,0-96h96a24,24,0,0,0,0-48H72a8,8,0,0,1,0-16h96a40,40,0,0,1,0,80H72a32,32,0,0,0,0,64H173.17A28,28,0,0,1,228,200Z"
+                  ></path></svg
+                >&nbsp; Arusha - Namanga Border Post
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#e01b24"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM84,184a12,12,0,1,1,12-12A12,12,0,0,1,84,184Zm44,0a12,12,0,1,1,12-12A12,12,0,0,1,128,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,128,144Zm44,40a12,12,0,1,1,12-12A12,12,0,0,1,172,184Zm0-40a12,12,0,1,1,12-12A12,12,0,0,1,172,144Zm36-64H48V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24Z"
+                  ></path></svg
+                >&nbsp; June 26, 2025 <strong class="dash">&nbsp;-&nbsp;</strong>07:30 AM
+              </p>
             <button class="join">Join</button>
           </div>
         </article>
@@ -234,7 +294,7 @@
           </div>
         </article>
 
-        <article class="event-card-2">
+        <article class="event-card-2 card-three">
           <div class="img-div2">
             <img
               class="card3-img"
@@ -310,9 +370,9 @@
           <div class="social">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="#ffffff"
+              width="32"
+              height="32"
+              fill="#e01b24"
               viewBox="0 0 256 256"
             >
               <path
@@ -347,5 +407,9 @@
         </div>
       </section>
     </nav>
+
+  <script>
+ 
+  </script>
   </body>
 </html>
