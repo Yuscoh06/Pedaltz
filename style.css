@@ -1,6 +1,6 @@
 :root {
-  --accent: #ff5733;
-  --max-width: 1200px;
+  --accent: #fc3a0f;
+  --max-width: 1400px;
   --gap: 32px;
   font-family: sans-serif;
 }
@@ -17,18 +17,19 @@ body {
 }
 
 .logo-img {
-  width: 2.5rem;
-  height: 3rem;
+  width: 3rem;
+  height: 3.5rem;
 }
 
 .nav {
   max-width: var(--max-width);
   display: grid;
-  grid-template-columns: 1.5fr 2fr 0.5fr;
+  grid-template-columns: 2fr 2.5fr 0.5fr;
   align-items: center;
   position: relative;
   z-index: 9999;
   margin: 20px auto;
+  padding: 0;
   box-sizing: border-box;
 }
 .nav-links {
@@ -38,7 +39,7 @@ body {
   padding: 0;
   margin: 0;
   color: #fdfdfd;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
   align-items: center;
   justify-content: center;
@@ -63,25 +64,12 @@ body {
   display: none;
 }
 
-.hero {
-  padding: 0;
-  display: grid;
-  grid-template-columns: 0.9fr 1.2fr;
-  gap: 0;
-  height: auto;
-  align-items: center;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin-top: -12rem;
-  margin-right: 0;
-}
-
 /* left */
 .left {
   z-index: 800;
-  margin-top: 9rem;
+  margin-top: 13rem;
   width: 100%;
-  margin-left: 7rem;
+  margin-left: 1.2rem;
 }
 
 .title {
@@ -123,7 +111,7 @@ body {
 .label {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 800;
 }
 
@@ -179,33 +167,43 @@ body {
 }
 
 /* right - image with diagonal clip */
-.right {
-  height: 100%;
-  overflow: hidden;
-  border-radius: 170px;
-  border-top-left-radius: 30px;
-  width: 70rem;
-  transform: rotate(-23deg);
-  margin-top: -20rem;
-  margin-left: 10rem;
 
+.hero {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1rem;
+  overflow: hidden;
+  margin-top: -12rem;
+  margin-right: -6rem;
+}
+.right {
+  height: 115%;
+  width: 155%;
+  border-radius: 100px;
+  transform: rotate(-29deg);
+  margin-top: -22rem;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .IMG {
-  margin-left: -13.2rem;
-  height: 70rem;
-  width: 65rem;
-  margin-top: -11rem;
+  transform: rotate(42deg);
+  height: 75rem;
+  margin-top: -3.4rem;
+  width: 100%;
   object-fit: cover;
-  transform: rotate(39deg);
+  margin-left: -17rem;
+  position: relative;
 }
 .events-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: start;
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 40px auto;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -397,7 +395,7 @@ h2 {
 }
 
 .trail {
-  padding: 1.6rem 4.2rem;
+  padding: 1.6rem 4rem;
 }
 
 .trail-1 {
