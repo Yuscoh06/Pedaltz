@@ -24,7 +24,7 @@ body {
 .nav {
   max-width: var(--max-width);
   display: grid;
-  grid-template-columns: 2fr 2.5fr 0.5fr;
+  grid-template-columns: 1.4fr 2.5fr 0.5fr;
   align-items: center;
   position: relative;
   z-index: 9999;
@@ -383,7 +383,9 @@ h2 {
 }
 
 .plus {
-  padding: 1.6rem 1.5rem;
+  width: 9rem;
+  height: 10rem;
+  padding: 1.6rem 1.6rem;
 }
 
 .plus-1 {
